@@ -8,8 +8,8 @@ import {UserData} from "@/lib/data-prototype.js";
 const data = reactive({
   name: 'Rakib',
   email: 'rakib@mail.com',
-  password: '1234',
-  confirm_password: '12345',
+  password: '123456',
+  confirm_password: '123456',
   role: 'doctor',
   secure_key: 'abc',
 })

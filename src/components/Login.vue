@@ -9,7 +9,7 @@ import {findUser, setLoginInUser} from "@/lib/helper.js";
 import {toast} from "vue3-toastify";
 const data = reactive({
   email: 'rakib@mail.com',
-  password: '1234',
+  password: '123456',
   remember: false
 })
 
