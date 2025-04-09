@@ -11,7 +11,7 @@ const props = defineProps({
 const {variant, size, loading} = props;
 
 const buttonVariant = {
-  common: 'transition-all cursor-pointer',
+  common: 'transition-all cursor-pointer rounded-lg',
   size: {
     lg: 'py-[15px] px-[25px]',
     md: 'py-[10px] px-[20px]',

@@ -1,1 +1,4 @@
 @import './base.css';
+.strike-through td {
+    text-decoration: line-through;
+}

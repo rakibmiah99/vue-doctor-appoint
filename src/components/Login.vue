@@ -58,7 +58,7 @@ const handleLogin = () => {
           <router-link class="text-blue-700 hover:underline" :to="{name: 'register'}">Create new account</router-link>
         </div>
 
-        <Button @click="handleLogin" variant="danger">Submit</Button>
+        <Button @click="handleLogin" variant="primary">Submit</Button>
 
 
       </div>

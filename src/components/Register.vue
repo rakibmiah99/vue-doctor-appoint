@@ -120,7 +120,7 @@ const handleSubmit = async () => {
           <router-link class="text-blue-700 hover:underline" :to="{name: 'login'}">Have an account?</router-link>
         </div>
 
-        <Button @click="handleSubmit" variant="danger">Create</Button>
+        <Button @click="handleSubmit" variant="primary">Create</Button>
 
 
       </div>

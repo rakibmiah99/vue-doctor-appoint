@@ -12,6 +12,11 @@ import Vue3Toastify from "vue3-toastify";
 import DashboardLayout from "@/components/DashboardLayout.vue";
 import Home from "@/components/Home.vue";
 import {getLoggedInUser} from "@/lib/helper.js";
+import Doctors from "@/components/Doctors.vue";
+import Contact from "@/components/Contact.vue";
+import Appointment from "@/components/Appointment.vue";
+import MyAppointment from "@/components/MyAppointment.vue";
+import RescheduleAppointment from "@/components/RescheduleAppointment.vue";
 
 const routes = [
     {
@@ -39,6 +44,31 @@ const routes = [
                 path: '/',
                 component: Home,
                 name: 'dashboard',
+            },
+            {
+                path: '/doctors',
+                component: Doctors,
+                name: 'doctors',
+            },
+            {
+                path: '/my-appointment',
+                component: MyAppointment,
+                name: 'my-appointment',
+            },
+            {
+                path: '/reschedule-appointment',
+                component: RescheduleAppointment,
+                name: 'reschedule-appointment',
+            },
+            {
+                path: '/appointment',
+                component: Appointment,
+                name: 'appointment',
+            },
+            {
+                path: '/contact',
+                component: Contact,
+                name: 'contact',
             }
         ]
     }
@@ -46,6 +76,7 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(),
+    linkExactActiveClass: 'text-blue-500 font-bold',
     routes
 })
 

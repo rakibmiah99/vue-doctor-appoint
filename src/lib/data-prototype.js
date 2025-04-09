@@ -30,7 +30,19 @@ const UserData = (data) => {
 }
 
 
+const AppointmentData = (data) => {
+    return new Promise( (resolve, reject) => {
+        const keys = ['id','name', 'email', 'phone', 'doctor', 'date', 'time', 'reason', 'status', 'comment'];
+        CheckData(data, keys, resolve, reject);
+    }).then(appointment => {
+        return appointment;
+    }).catch(error => {
+        toast.error(error)
+    })
+}
 
 
 
-export {UserData}
+
+
+export {UserData, AppointmentData}
