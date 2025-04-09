@@ -86,7 +86,7 @@ router.beforeEach((to, from) => {
     }
     else{
         if(getLoggedInUser()){
-            // next()
+            return true
         }
         else{
             return {name: 'login'}
